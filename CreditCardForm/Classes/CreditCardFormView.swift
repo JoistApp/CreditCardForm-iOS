@@ -12,7 +12,6 @@ public enum Brands : String {
     case NONE, Visa, MasterCard, Amex, JCB, DEFAULT, Discover
 }
 
-@IBDesignable
 public class CreditCardFormView : UIView {
     
     fileprivate var cardView: UIView    = UIView(frame: .zero)
@@ -212,7 +211,6 @@ public class CreditCardFormView : UIView {
     
     private func createbackImage() {
         backImage.translatesAutoresizingMaskIntoConstraints = false
-        backImage.image = UIImage(named: "back.jpg")
         backImage.contentMode = UIViewContentMode.scaleAspectFill
         frontView.addSubview(backImage)
         
